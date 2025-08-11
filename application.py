@@ -1,8 +1,7 @@
-cat>application.py<<EOF
 from flask import Flask
 app=Flask(__name__)
 @app.route("/")
 def home():
-  return "Hello from Api-Flask in Docker!"
+  return "Hello from Flask in Docker!"
 if__name__=="__main__":
-  app.run(host="0.0.0.0",port=5000)EOF
+  app.run(host="0.0.0.0",port=5000)
