@@ -4,10 +4,10 @@ FROM python:3.9-slim
 WORKDIR /app
 
 # Copy dependency file
-COPY requirements.txt /app/requirements.txt
+COPY requirements.txt  /app/requirements.txt
 
 # Upgrade pip and install dependencies
-RUN pip install --no-cache-dir -r /app/requirements.txt
+RUN pip install --no-cache-dir -r  /app/requirements.txt
 
 # Copy the rest of the application
 Copy . /app
